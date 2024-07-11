@@ -1,0 +1,9 @@
+{
+	"commands": [
+		"rs",
+		"resetscore",
+		"reset",
+		"rsc"
+	],
+    "prefix": "[{lime}Swiftly{default}]"
+}

@@ -1,0 +1,10 @@
+{
+    "resetscore": {
+        "en": "You successfully reset your score!",
+        "ro": "Ți-ai resetat scorul cu succes!"
+    },
+    "already_resetted": {
+        "en": "Your score is already set to {lime}0{default}.",
+        "ro": "Scorul tău este deja setat pe {lime}0{default}."
+    }
+}
