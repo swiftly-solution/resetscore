@@ -5,14 +5,14 @@ local resetCmd = function(playerid, args, argsCount, silent)
 
     local roundstats = player:CCSPlayerController().ActionTrackingServices.MatchStats.Parent
 	if roundstats.Kills == 0 and roundstats.Deaths == 0 and roundstats.Assists == 0 and roundstats.Damage == 0 then
-        return ReplyToCommand(player, config:Fetch("resetscore.prefix"), FetchTranslation("resetscore.already_resetted"))
+        return ReplyToCommand(playerid, config:Fetch("resetscore.prefix"), FetchTranslation("resetscore.already_resetted"))
     end
     
     roundstats.Kills = 0
     roundstats.Deaths = 0
     roundstats.Assists = 0
     roundstats.Damage = 0
-    ReplyToCommand(player, config:Fetch("resetscore.prefix"), FetchTranslation("resetscore.resetscore"))
+    ReplyToCommand(playerid, config:Fetch("resetscore.prefix"), FetchTranslation("resetscore.resetscore"))
 end
 
 AddEventHandler("OnPluginStart", function(event)
